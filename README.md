@@ -1,159 +1,189 @@
 # Healing Bloom -  Skin Disease Identification App
-Healing Bloom is a mobile application designed to help users identify skin diseases using advanced image recognition and offer personalized product recommendations. The app uses **Inspection Rusnet V2** for skin disease detection and integrates face scanning features to suggest relevant products. Additionally, users can explore and shop for medicines and cosmetics from an integrated online shopping platform.
+# 🌸 Healing Bloom
+
+[![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter)](https://flutter.dev/)
+[![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge&logo=dart)](https://dart.dev/)
+[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS-lightgrey?style=for-the-badge)](https://flutter.dev/docs/development/ui/widgets/material)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](./LICENSE)
+
+**Healing Bloom** is a comprehensive mobile application designed to revolutionize dermatological self-care. By leveraging advanced image recognition (**Inspection Rusnet V2**) and machine learning, the app identifies potential skin diseases, analyzes facial features for personalized skincare recommendations, and provides an integrated e-commerce platform for medicines and cosmetics.
+
 <p align="center">
-  <img src="images/img1.jpg" alt="App Preview" width="400"/>
+  <img src="images/img1.jpg" alt="Healing Bloom App Preview" width="600"/>
 </p>
 
 ---
 
-## 🔹 Features
+## Table of Contents
 
-### 1. Skin Disease Identification  
-<p align="center">
-  <img src="images/img2.jpg" alt="Skin Detection Feature" width="300"/>
-</p>
-- Detects and identifies possible skin diseases using **Inspection Rusnet V2**.  
-- Supports scanning **photos from camera or gallery**.  
-
-### 2. Face Scanning for Product Recommendations  
-<p align="center">
-  <img src="images/img3.jpg" alt="Face Scanning" width="300"/>
-</p>
-- Scans user’s face to suggest **skincare and cosmetic products** tailored to skin type.  
-- Works seamlessly with the recommendation engine.  
-
-### 3. Integrated Shopping Platform  
-<p align="center">
-  <img src="images/img4.jpg" alt="Shopping Section" width="300"/>
-</p>
-- Browse categories like **Medicines** and **Cosmetics**.  
-- Filter, search, and sort products.  
-- Add to cart and checkout securely.  
-
-### 4. Personalized Recommendations  
-<p align="center">
-  <img src="images/img5.jpg" alt="Recommendations" width="300"/>
-</p>
-- Suggests **skincare routines** and **products** based on detected skin conditions.  
+- [✨ Features](#-features)
+- [📸 App Gallery](#-app-gallery)
+- [🛠 Tech Stack](#-tech-stack)
+- [🚀 Getting Started](#-getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Backend Setup](#backend-setup)
+  - [ML Model Integration](#ml-model-integration)
+- [📂 Project Structure](#-project-structure)
+- [🔮 Future Enhancements](#-future-enhancements)
+- [🏆 Achievements](#-achievements)
+- [🤝 Contributing](#-contributing)
 
 ---
 
-## 💻 Requirements
+## ✨ Features
 
-- **Flutter SDK**: 3.x or higher  
-- **Dart SDK**: 2.x or higher  
-- **IDE**: Android Studio or VS Code  
-- **Supported Platforms**: Android & iOS  
+### 🔍 Skin Disease Identification
+
+- **AI-Powered Detection:** Utilizes the **Inspection Rusnet V2** model to analyze skin conditions.
+- **Flexible Input:** Supports real-time camera scanning or importing images from the gallery.
+- **Instant Results:** Provides immediate disease prediction with detailed information.
+
+### 👤 Face Scanning & Personalization
+
+- **Smart Analysis:** Scans the user's face using **Google ML Kit** to determine skin attributes.
+- **Tailored Recommendations:** Suggests skincare routines and cosmetic products specifically suited to the user's skin type.
+
+### 🛒 Integrated Shopping Platform
+
+- **E-Commerce:** Browse a vast catalog of **Medicines** and **Cosmetics**.
+- **User-Friendly:** Includes search, filter, and sort functionalities.
+- **Secure Checkout:** Add items to the cart and complete purchases seamlessly.
 
 ---
 
-## ⚡ Installation
+## 📸 App Gallery
 
-```bash
-git clone https://github.com/yourusername/healing_bloom.git
-cd healing_bloom
-flutter pub get
+|              Skin Detection              |              Face Scanning               |                 Shopping                 |             Recommendations              |
+| :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
+| <img src="images/img2.jpg" width="200"/> | <img src="images/img3.jpg" width="200"/> | <img src="images/img4.jpg" width="200"/> | <img src="images/img5.jpg" width="200"/> |
 
-If you're new to Flutter, follow the official installation guide
-.
+---
 
-🧠 Setting Up Inspection Rusnet V2
-<p align="center"> <img src="images/img6.jpg" alt="Model Integration" width="350"/> </p>
+## 🛠 Tech Stack
 
-Steps to integrate Inspection Rusnet V2 for skin disease detection:
+- **Frontend:** Flutter & Dart
+- **State Management:** Provider
+- **Machine Learning:** TensorFlow Lite (Inspection Rusnet V2), Google ML Kit (Face Detection)
+- **Networking:** HTTP, Connectivity Plus
+- **Storage:** Shared Preferences, Flutter Secure Storage
+- **Backend:** REST APIs (Node.js/Express - _See Backend Repo_)
 
-Download the TFLite model.
+---
 
-Integrate the model into the Flutter app.
+## 🚀 Getting Started
 
-Run sample tests using camera or gallery images.
+### Prerequisites
 
-Use TensorFlow Lite or any Flutter-compatible ML framework to load and run the model.
+- **Flutter SDK:** Version 3.x or higher
+- **Dart SDK:** Version 3.x or higher
+- **IDE:** VS Code or Android Studio
+- **Backend Server:** The backend repository must be running locally or deployed.
 
-🔍 Face Scanning & Product Recommendation
-<p align="center"> <img src="images/img7.jpg" alt="Face Analysis" width="300"/> </p>
+### Installation
 
-Implement face detection using packages like Google ML Kit
-.
+1.  **Clone the Repository**
 
-Feed results into the recommendation engine.
+    ```bash
+    git clone https://github.com/yourusername/healing_bloom.git
+    cd healing_bloom
+    ```
 
-Display personalized products to users.
+2.  **Install Dependencies**
 
-🛒 Shopping Platform
-<p align="center"> <img src="images/img8.jpg" alt="Store" width="300"/> </p>
+    ```bash
+    flutter pub get
+    ```
 
-Browse Medicines & Cosmetics
+3.  **Run the App**
+    ```bash
+    flutter run
+    ```
 
-Search, filter, and sort products
+### Backend Setup
 
-Add to cart and complete purchase securely
+⚠️ **Important:** This app requires the backend server to function correctly (Product data, Auth, etc.).
 
-🏗️ Project Structure
-/healing_bloom
-|-- /images               # UI images (img1.jpg - img10.jpg)
-|-- /lib
-|   |-- /screens
-|   |-- /models
-|   |-- /services
-|   |-- main.dart
-🎯 Usage
-Scan Skin
-<p align="center"> <img src="images/img9.jpg" alt="Scan Skin" width="300"/> </p> 1. Open **Scan Skin** tab 2. Take or upload a photo 3. View **disease prediction** and related products
-Scan Face for Products
+1.  Clone the backend repository:
+    ```bash
+    git clone https://github.com/alanroy003/Healing_Bloom_Backend.git
+    ```
+2.  Follow the `README.md` in the backend repository to start the server.
+3.  Update the API Base URL in your Flutter app (e.g., `lib/services/api_config.dart` or `.env`):
+    ```dart
+    const String baseUrl = 'http://<YOUR_LOCAL_IP>:3000'; // Or your deployed URL
+    ```
 
-Open Face Scan tab
+### ML Model Integration
 
-Grant camera access
+To enable Skin Disease Identification:
 
-Get personalized recommendations
+1.  Ensure the **Inspection Rusnet V2** TFLite model is placed in `assets/models/`.
+2.  Verify `pubspec.yaml` includes the asset path:
+    ```yaml
+    flutter:
+      assets:
+        - assets/models/
+    ```
 
-Shopping
-<p align="center"> <img src="images/img10.jpg" alt="Shopping Cart" width="300"/> </p> 1. Browse products 2. Add to cart 3. Complete purchase
-🛠️ Technologies Used
+---
 
-Flutter & Dart
+## 📂 Project Structure
 
-TensorFlow Lite (Inspection Rusnet V2)
+```plaintext
+healing_bloom/
+├── assets/
+│   ├── animations/       # Lottie files
+│   ├── data/             # Local JSON data (disease_data.json)
+│   ├── icons/            # App icons
+│   ├── images/           # UI Images
+│   └── models/           # TFLite models
+├── lib/
+│   ├── models/           # Data models
+│   ├── screens/          # UI Screens (Scan, Shop, Home)
+│   ├── services/         # API & ML Services
+│   ├── widgets/          # Reusable components
+│   └── main.dart         # Entry point
+├── pubspec.yaml          # Dependencies
+└── README.md             # Documentation
+```
 
-Firebase (Optional Backend)
+---
 
-Face Detection (Google ML Kit or alternative)
+## 🔮 Future Enhancements
 
-REST APIs for shopping integration
+- [ ] **Routine Reminders:** Push notifications for skincare routines.
+- [ ] **Localization:** Multi-language support.
 
-🔗 Backend Reference
+---
 
-For backend APIs, database integration, and admin functionality, check out the Healing Bloom Backend repository:
-Healing Bloom Backend
+## 🏆 Achievements
 
-🚀 Future Enhancements
+- 📄 Published a conference paper at **ICTEST IEEE Conference**.
 
-User login & profile management
+---
 
-Skin history tracking
+## 🤝 Contributing
 
-Routine reminders
+Contributions are welcome! Please follow these steps:
 
-Multi-language support
+1.  Fork the repository.
+2.  Create a new branch: `git checkout -b feature/YourFeature`.
+3.  Commit your changes: `git commit -m 'Add some feature'`.
+4.  Push to the branch: `git push origin feature/YourFeature`.
+5.  Open a Pull Request.
 
-🏆 Academic Achievements & Highlights
+---
 
-Published a conference paper at ICTEST IEEE Conference
+## 🔗 Repositories
 
-Won Hackathon at college
+| Component                     | Repository Link                                                              |
+| :---------------------------- | :--------------------------------------------------------------------------- |
+| **📱 Frontend (Flutter)**     | [Healing Bloom App](https://github.com/yourusername/healing_bloom)           |
+| **🖥️ Backend (Node/Express)** | [Healing Bloom Backend](https://github.com/alanroy003/Healing_Bloom_Backend) |
 
-Invited to teach AI & Python workshops for students
+---
 
-🤝 Contributing
-
-Pull requests are welcome!
-
-git checkout -b feature-name
-git commit -m "Add new feature"
-git push origin feature-name
-
-Open a PR on GitHub. 🎉
-
-📸 Preview Gallery
-<p align="center"> <img src="images/img9.jpg" alt="Scan Skin" width="200"/> &nbsp; <img src="images/img7.jpg" alt="Face Scan" width="200"/> &nbsp; <img src="images/img10.jpg" alt="Shopping Cart" width="200"/> </p> ```
+<p align="center">
+  Made with ❤️ using Flutter
+</p>
