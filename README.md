@@ -1,5 +1,4 @@
 # Healing Bloom -  Skin Disease Identification App
-# 🌸 Healing Bloom
 
 [![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter)](https://flutter.dev/)
 [![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge&logo=dart)](https://dart.dev/)
@@ -67,7 +66,7 @@
 - **Machine Learning:** TensorFlow Lite (Inspection Rusnet V2), Google ML Kit (Face Detection)
 - **Networking:** HTTP, Connectivity Plus
 - **Storage:** Shared Preferences, Flutter Secure Storage
-- **Backend:** REST APIs (Node.js/Express - _See Backend Repo_)
+- **Backend:** REST APIs (Django/Python - _See Backend Repo_)
 
 ---
 
@@ -102,16 +101,64 @@
 
 ### Backend Setup
 
-⚠️ **Important:** This app requires the backend server to function correctly (Product data, Auth, etc.).
+⚠️ **Important:** This app requires the backend server to function correctly (Product data, Auth, etc.). The backend is built using **Django (Python)** and **PostgreSQL**.
 
-1.  Clone the backend repository:
+#### Requirements
+
+- **Python:** Version 3.8 or higher
+- **Django:** Version 3.x or higher
+- **PostgreSQL:** Database for storing user data and app information
+- **Django REST Framework:** For creating the APIs
+
+#### Installation Steps
+
+1.  **Clone the Repository**
+
     ```bash
-    git clone https://github.com/alanroy003/Healing_Bloom_Backend.git
+    git clone https://github.com/Alan21303/Healing_Bloom_Backend.git
+    cd Healing_Bloom_Backend
     ```
-2.  Follow the `README.md` in the backend repository to start the server.
-3.  Update the API Base URL in your Flutter app (e.g., `lib/services/api_config.dart` or `.env`):
+
+2.  **Set Up the Python Environment**
+
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    pip install -r requirements.txt
+    ```
+
+3.  **Set Up PostgreSQL Database**
+    - Install PostgreSQL and create a new database.
+    - Update the `DATABASES` settings in `settings.py`:
+      ```python
+      DATABASES = {
+          'default': {
+              'ENGINE': 'django.db.backends.postgresql',
+              'NAME': 'your_database_name',
+              'USER': 'your_database_user',
+              'PASSWORD': 'your_database_password',
+              'HOST': 'localhost',
+              'PORT': '5432',
+          }
+      }
+      ```
+    - Run migrations:
+      ```bash
+      python manage.py migrate
+      ```
+
+4.  **Start the Development Server**
+
+    ```bash
+    python manage.py runserver
+    ```
+
+    The API will be available at `http://127.0.0.1:8000/`.
+
+5.  **Connect Flutter App**
+    Update the API Base URL in your Flutter app (e.g., `lib/services/api_config.dart` or `.env`):
     ```dart
-    const String baseUrl = 'http://<YOUR_LOCAL_IP>:3000'; // Or your deployed URL
+    const String baseUrl = 'http://127.0.0.1:8000'; // Or your local IP if running on device
     ```
 
 ### ML Model Integration
