@@ -228,7 +228,7 @@ Contributions are welcome! Please follow these steps:
 | Component                     | Repository Link                                                              |
 | :---------------------------- | :--------------------------------------------------------------------------- |
 | **📱 Frontend (Flutter)**     | [Healing Bloom App](https://github.com/yourusername/healing_bloom)           |
-| **🖥️ Backend (Node/Express)** | [Healing Bloom Backend](https://github.com/alanroy003/Healing_Bloom_Backend) |
+| **🖥️ Backend** | [Healing Bloom Backend](https://github.com/alanroy003/Healing_Bloom_Backend) |
 
 ---
 
