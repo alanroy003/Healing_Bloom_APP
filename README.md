@@ -175,6 +175,7 @@ To enable Skin Disease Identification:
 
 ---
 
+
 ## 📂 Project Structure
 
 ```plaintext
