@@ -225,6 +225,3 @@ git push origin feature-name
 
 Open a PR on GitHub. 🎉
 
-in this readme file add aoption for backend whch is in another repo
-
-the backend is in the repo https://github.com/alanroy003/Healing_Bloom_Backend
