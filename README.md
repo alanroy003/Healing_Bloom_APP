@@ -29,6 +29,12 @@
 - [🤝 Contributing](#-contributing)
 
 ---
+## 🔗 Repositories
+
+| Component                     | Repository Link                                                              |
+| :---------------------------- | :--------------------------------------------------------------------------- |
+| **📱 Frontend (Flutter)**     | [Healing Bloom App](https://github.com/yourusername/healing_bloom)           |
+| **🖥️ Backend** | [Healing Bloom Backend](https://github.com/alanroy003/Healing_Bloom_Backend) |
 
 ## ✨ Features
 
@@ -223,12 +229,7 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 🔗 Repositories
 
-| Component                     | Repository Link                                                              |
-| :---------------------------- | :--------------------------------------------------------------------------- |
-| **📱 Frontend (Flutter)**     | [Healing Bloom App](https://github.com/yourusername/healing_bloom)           |
-| **🖥️ Backend** | [Healing Bloom Backend](https://github.com/alanroy003/Healing_Bloom_Backend) |
 
 ---
 
