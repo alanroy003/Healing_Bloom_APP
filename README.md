@@ -4,6 +4,12 @@
 [![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge&logo=dart)](https://dart.dev/)
 [![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS-lightgrey?style=for-the-badge)](https://flutter.dev/docs/development/ui/widgets/material)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](./LICENSE)
+## 🔗 Repositories
+
+| Component                     | Repository Link                                                              |
+| :---------------------------- | :--------------------------------------------------------------------------- |
+| **📱 Frontend (Flutter)**     | [Healing Bloom App](https://github.com/yourusername/healing_bloom)           |
+| **🖥️ Backend** | [Healing Bloom Backend](https://github.com/alanroy003/Healing_Bloom_Backend) |
 
 **Healing Bloom** is a comprehensive mobile application designed to revolutionize dermatological self-care. By leveraging advanced image recognition (**Inspection Rusnet V2**) and machine learning, the app identifies potential skin diseases, analyzes facial features for personalized skincare recommendations, and provides an integrated e-commerce platform for medicines and cosmetics.
 
@@ -29,12 +35,6 @@
 - [🤝 Contributing](#-contributing)
 
 ---
-## 🔗 Repositories
-
-| Component                     | Repository Link                                                              |
-| :---------------------------- | :--------------------------------------------------------------------------- |
-| **📱 Frontend (Flutter)**     | [Healing Bloom App](https://github.com/yourusername/healing_bloom)           |
-| **🖥️ Backend** | [Healing Bloom Backend](https://github.com/alanroy003/Healing_Bloom_Backend) |
 
 ## ✨ Features
 
